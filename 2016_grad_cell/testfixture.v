@@ -15,15 +15,15 @@ parameter N_PAT   = N_EXP;
 reg   [7:0]   gray_mem   [0:N_PAT-1];
 reg   [7:0]   exp_mem    [0:N_EXP-1];
 
-reg [7:0] LBP_dbg;
-reg [7:0] exp_dbg;
+	reg [7:0] LBP_dbg;//not used
+	reg [7:0] exp_dbg;//not used
 wire [7:0] lbp_data;
 reg   clk = 0;
 reg   reset = 0;
 reg   result_compare = 0;
 
 integer err = 0;
-integer times = 0;
+integer times = 0;//not used
 reg over = 0;
 integer exp_num = 0;
 wire [13:0] gray_addr;
